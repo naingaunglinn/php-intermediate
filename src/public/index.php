@@ -1,7 +1,14 @@
 <?php
 
-phpinfo();
+require_once '../Transaction.php';
 
-echo "<pre>";
-print_r($_SERVER);
-echo "</pre";
+// Classes & Objects
+$transaction = (new Transaction(100, 'Transaction 1'))
+                ->addTax(8)
+                ->applyDsicount(10);
+
+$amount = $transaction->getAmount();
+
+unset($transaction);
+
+var_dump($amount);
