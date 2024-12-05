@@ -11,5 +11,11 @@ class Transaction
         
     }
     
-    
+    /**
+     * @return Customer|null 
+    */
+    public function getCustomer(): ?Customer
+    {
+        return $this->customer;
+    }
 }
