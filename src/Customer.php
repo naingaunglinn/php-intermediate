@@ -11,4 +11,9 @@ class Customer
     {
         return $this->paymentProfile;
     }
+
+    public function createProfile()
+    {
+        return 1;
+    }
 }
