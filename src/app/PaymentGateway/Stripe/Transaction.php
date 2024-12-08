@@ -2,7 +2,7 @@
 
 declare(strict_types= 1);
 
-namespace PaymentGateWay\Paddle;
+namespace App\PaymentGateWay\Stripe;
 class Transaction
 {
     public function __construct()
